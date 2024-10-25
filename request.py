@@ -7,3 +7,4 @@ key = os.getenv('CHATGPTKEY')
 
 client = openai.OpenAI({api_key=key})
 
+evaReply = client.audio.
