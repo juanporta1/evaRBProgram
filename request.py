@@ -5,6 +5,6 @@ import os
 dotenv.load_dotenv()
 key = os.getenv('CHATGPTKEY')
 
-client = openai.OpenAI({api_key=key})
+client = openai.OpenAI()
+client.api_key = key
 
-evaReply = client.audio.
